@@ -60,33 +60,43 @@
                 >
                     <h2 class="form__heading">Enter your details below</h2>
                     <fieldset class="form__type">
-                        <input
-                            id="metric"
-                            type="radio"
-                            name="measurement-type"
-                        />
-                        <label for="metric">Metric</label>
-                        <input
-                            id="imperial"
-                            type="radio"
-                            name="measurement-type"
-                        />
-                        <label for="imperial">Imperial</label>
+                        <label>
+                            <input
+                                id="metric"
+                                type="radio"
+                                name="measurement-type"
+                                class="form__type--radio"
+                            />
+                            Metric
+                        </label>
+                        <label>
+                            <input
+                                id="imperial"
+                                type="radio"
+                                name="measurement-type"
+                                class="form__type--radio"
+                            />
+                            Imperial
+                        </label>
                     </fieldset>
                     <div
                         id="metric-form"
                         class="form__metric"
                     >
-                        <label for="metric-height">Height</label>
-                        <input
-                            id="metric-height"
-                            type="number"
-                        />
-                        <label for="metric-weight">Weight</label>
-                        <input
-                            id="metric-weight"
-                            type="number"
-                        />
+                        <label>
+                            Height
+                            <input
+                                id="metric-height"
+                                type="number"
+                            />
+                        </label>
+                        <label>
+                            Weight
+                            <input
+                                id="metric-weight"
+                                type="number"
+                            />
+                        </label>
                     </div>
                     <div
                         id="imperial-form"

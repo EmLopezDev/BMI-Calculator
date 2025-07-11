@@ -10,6 +10,7 @@
     --color-blue-900: rgb(37, 51, 71);
     --color-gradient: linear-gradient(
         to right,
+        var(--color-white),
         rgb(214, 252, 254),
         rgb(214, 230, 254)
     );
@@ -21,7 +22,6 @@
     --tertiary-bg-color: var(--color-blue-500);
     --selection-bg-color: var(--color-blue-100);
     --primary-font-color: var(--color-blue-900);
-    --secondary-font-color: var(--color-blue-900);
-    --primary-box-shadow: u.rem(16) u.rem(32) u.rem(56) 0
-        var(--color-box-shadow);
+    --secondary-font-color: var(--color-grey-500);
+    --primary-box-shadow: 1rem 2rem 3.5rem 0 var(--color-box-shadow);
 }

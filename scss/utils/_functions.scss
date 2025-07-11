@@ -17,3 +17,7 @@
         @error "Don't use units when using the em() function; only numbers.";
     }
 }
+
+@function responsive($min-pixel, $max-pixel) {
+    @return clamp(rem($min-pixel), 1.972rem + 2.254vw, rem($max-pixel));
+}
