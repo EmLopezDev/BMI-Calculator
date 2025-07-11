@@ -21,21 +21,21 @@
     </head>
     <body>
         <main>
-            <header>
-                <img
-                    src="./assets/images/logo.svg"
-                    alt="company logo"
-                />
-                <h1>Body Mass Index Calculator</h1>
-                <p>
-                    Better understand your weight in relation to your height
-                    using our body mass index (BM) calculator. While BMI is not
-                    the sole determinant of a healthy weight, it offers a
-                    valuable starting point to evaluate your overall health and
-                    well-being.
-                </p>
-            </header>
             <section>
+                <header>
+                    <img
+                        src="./assets/images/logo.svg"
+                        alt="company logo"
+                    />
+                    <h1>Body Mass Index Calculator</h1>
+                    <p>
+                        Better understand your weight in relation to your height
+                        using our body mass index (BM) calculator. While BMI is
+                        not the sole determinant of a healthy weight, it offers
+                        a valuable starting point to evaluate your overall
+                        health and well-being.
+                    </p>
+                </header>
                 <form
                     action=""
                     novalidate
@@ -53,7 +53,7 @@
                         name="measurement-type"
                     />
                     <label for="imperial">Imperial</label>
-                    <div>
+                    <div id="metric-form">
                         <label for="metric-height">Height</label>
                         <input
                             id="metric-height"
@@ -65,7 +65,10 @@
                             type="number"
                         />
                     </div>
-                    <div style="display: none">
+                    <div
+                        id="imperial-form"
+                        style="display: none"
+                    >
                         <fieldset>
                             <label for="imperial-height">Height</label>
                             <input
@@ -83,19 +86,20 @@
                             <input type="number" />
                         </fieldset>
                     </div>
+                    <div>
+                        <p>
+                            Your BMI is...
+                            <span>23.4</span>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Suscipit facere doloremque magni porro amet
+                            voluptatem veritatis iure aperiam odio, fuga
+                            cupiditate deleniti accusamus hic asperiores,
+                            nostrum nisi quia dolores cum!
+                        </p>
+                    </div>
                 </form>
-                <div>
-                    <p>
-                        Your BMI is...
-                        <span>23.4</span>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Suscipit facere doloremque magni porro amet voluptatem
-                        veritatis iure aperiam odio, fuga cupiditate deleniti
-                        accusamus hic asperiores, nostrum nisi quia dolores cum!
-                    </p>
-                </div>
             </section>
             <section>
                 <img
