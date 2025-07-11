@@ -1,0 +1,17 @@
+@use "../utils" as u;
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    padding-block: u.rem(32);
+    padding-inline: u.rem(24);
+}
