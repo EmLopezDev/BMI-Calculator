@@ -13,7 +13,7 @@ $line-height-sm: 110%;
 $line-height-md: 120%;
 $line-height-lg: 150%;
 $letter-spacing-small: f.rem(-0.05);
-$letter-spacing-none: 0%;
+$letter-spacing-none: 0;
 
 @mixin text-preset-1 {
     font-size: f.responsive($font-size-xl, $font-size-xxl);
@@ -23,35 +23,35 @@ $letter-spacing-none: 0%;
 }
 
 @mixin text-preset-2 {
-    font-size: $font-size-xl;
+    font-size: f.rem($font-size-xl);
     font-weight: $font-weight-semi-bold;
     line-height: $line-height-sm;
     letter-spacing: $letter-spacing-small;
 }
 
 @mixin text-preset-3 {
-    font-size: $font-size-lg;
+    font-size: f.rem($font-size-lg);
     font-weight: $font-weight-semi-bold;
     line-height: $line-height-sm;
     letter-spacing: $letter-spacing-small;
 }
 
 @mixin text-preset-4 {
-    font-size: $font-size-md;
+    font-size: f.rem($font-size-md);
     font-weight: $font-weight-semi-bold;
     line-height: $line-height-md;
     letter-spacing: $letter-spacing-small;
 }
 
 @mixin text-preset-5 {
-    font-size: $font-size-sm;
+    font-size: f.rem($font-size-sm);
     font-weight: $font-weight-semi-bold;
     line-height: $line-height-md;
     letter-spacing: $letter-spacing-small;
 }
 
 @mixin text-preset-6 {
-    font-size: $font-size-xs;
+    font-size: f.rem($font-size-xs);
     line-height: $line-height-lg;
     letter-spacing: $letter-spacing-none;
 }
@@ -62,7 +62,7 @@ $letter-spacing-none: 0%;
 }
 
 @mixin text-preset-7 {
-    font-size: $font-size-xxs;
+    font-size: f.rem($font-size-xxs);
     line-height: $line-height-lg;
     letter-spacing: $letter-spacing-none;
 }

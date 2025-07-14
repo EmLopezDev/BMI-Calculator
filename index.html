@@ -66,6 +66,7 @@
                                 type="radio"
                                 name="measurement-type"
                                 class="form__type--radio"
+                                checked
                             />
                             Metric
                         </label>
@@ -83,41 +84,65 @@
                         id="metric-form"
                         class="form__metric"
                     >
-                        <label>
+                        <label class="number-label">
                             Height
-                            <input
-                                id="metric-height"
-                                type="number"
-                            />
+                            <div class="form-input">
+                                <input
+                                    id="metric-height"
+                                    type="number"
+                                />
+                                <span>cm</span>
+                            </div>
                         </label>
-                        <label>
+                        <label class="number-label">
                             Weight
-                            <input
-                                id="metric-weight"
-                                type="number"
-                            />
+                            <div class="form-input">
+                                <input
+                                    id="metric-weight"
+                                    type="number"
+                                />
+                                <span>kg</span>
+                            </div>
                         </label>
                     </div>
                     <div
                         id="imperial-form"
-                        style="display: none"
                         class="form__imperial"
                     >
-                        <fieldset class="form__imperial--height">
-                            <label for="imperial-height">Height</label>
-                            <input
-                                id="imperial-height"
-                                type="number"
-                            />
-                            <input type="number" />
+                        <fieldset class="form__imperial--input">
+                            <label class="number-label">
+                                Height
+                                <div class="form-input">
+                                    <input
+                                        id="imperial-height"
+                                        type="number"
+                                    />
+                                    <span>ft</span>
+                                </div>
+                            </label>
+                            <div class="form-input">
+                                <input type="number" />
+                                <span>in</span>
+                            </div>
                         </fieldset>
-                        <fieldset class="form__imperial--weight">
-                            <label for="imperial-weight">Weight</label>
-                            <input
-                                id="imperial-weight"
-                                type="number"
-                            />
-                            <input type="number" />
+                        <fieldset class="form__imperial--input">
+                            <label class="number-label">
+                                Weight
+                                <div class="form-input">
+                                    <input
+                                        id="imperial-weight"
+                                        type="number"
+                                    />
+                                    <span>st</span>
+                                </div>
+                            </label>
+                            <div class="form-input">
+                                <input
+                                    id="imperial-weight"
+                                    type="number"
+                                />
+                                <span>lbs</span>
+                            </div>
                         </fieldset>
                     </div>
                     <div class="form__results">

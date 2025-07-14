@@ -1,5 +1,57 @@
 @use "../utils/" as u;
 
+input[type="number"] {
+    height: 100%;
+    width: 100%;
+    border-radius: u.rem(12);
+    padding: u.rem(24);
+    border: u.rem(1) solid var(--primary-border-color);
+    color: var(--primary-font-color);
+    position: relative;
+    appearance: none;
+    -moz-appearance: textfield; // removes arrow controls in FireFox
+
+    @include u.text-preset-4;
+
+    // removes arrow controls in Chrome, Safari, Edge, Opera
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+fieldset {
+    border: none;
+}
+
+.number-label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(8);
+    color: var(--secondary-font-color);
+
+    @include u.text-preset-7;
+}
+
+.form-input {
+    position: relative;
+    height: u.rem(77);
+    width: 100%;
+
+    & span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-block: u.rem(24);
+        padding-inline-end: u.rem(24);
+        color: var(--tertiary-font-color);
+
+        @include u.text-preset-4;
+    }
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -17,14 +69,34 @@
 
     &__type {
         display: flex;
-        border: none;
         width: 100%;
 
         & label {
-            flex: 1 1 auto;
+            flex: 1 0;
+            display: flex;
+            align-items: center;
+            gap: u.rem(16);
+            height: u.rem(31);
             color: var(--primary-font-color);
 
             @include u.text-preset-6-semi-bold;
+
+            & input {
+                width: u.rem(31);
+                height: u.rem(31);
+                cursor: pointer;
+            }
+
+            & input:checked {
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    padding: u.rem(7.5);
+                    border-radius: 50%;
+                    background-color: var(--tertiary-bg-color);
+                    border: u.rem(8) solid var(--selection-bg-color);
+                }
+            }
         }
     }
 
@@ -32,14 +104,49 @@
         display: flex;
         flex-direction: column;
         gap: u.rem(16);
+    }
 
-        & label {
+    &__imperial {
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(16);
+        display: none;
+
+        &--input {
+            display: flex;
+            align-items: flex-end;
+            gap: u.rem(16);
+        }
+    }
+
+    &__results {
+        padding: u.rem(32);
+        background-color: var(--tertiary-bg-color);
+        border-radius: u.rem(16);
+        color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(24);
+
+        &--details {
             display: flex;
             flex-direction: column;
             gap: u.rem(8);
-            color: var(--secondary-font-color);
 
+            @include u.text-preset-6-semi-bold;
+
+            &-number {
+                @include u.text-preset-2;
+            }
+        }
+
+        &--info {
+            max-width: 35ch;
             @include u.text-preset-7;
+
+            &-ideal {
+                @include u.text-preset-7-bold;
+            }
         }
     }
 }
