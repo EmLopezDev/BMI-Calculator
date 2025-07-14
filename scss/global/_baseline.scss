@@ -31,7 +31,6 @@ body::after {
 
 .bmi {
     padding-block: u.rem(32);
-    padding-inline: u.rem(24);
 }
 
 .bmi__form {
@@ -40,6 +39,8 @@ body::after {
     display: flex;
     flex-direction: column;
     gap: u.rem(40);
+    padding-inline: u.rem(24);
+    margin-block-end: u.rem(64);
 }
 
 .intro {
@@ -67,5 +68,77 @@ body::after {
         text-align: center;
 
         @include u.text-preset-6;
+    }
+}
+
+.results {
+    margin-block-end: u.rem(86);
+    &__decor {
+        display: none;
+    }
+
+    &__meaning {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: u.rem(64);
+
+        &--img {
+            width: 100%;
+            margin-block-end: u.rem(48);
+        }
+
+        &--heading {
+            color: var(--primary-font-color);
+            margin-block-end: u.rem(32);
+            padding-inline: u.rem(24);
+
+            @include u.text-preset-3;
+        }
+
+        &--details {
+            color: var(--secondary-font-color);
+            padding-inline: u.rem(24);
+
+            @include u.text-preset-6;
+        }
+    }
+
+    &__advice {
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(40);
+        padding-inline: u.rem(24);
+    }
+}
+
+.limitations {
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(56);
+    padding-inline: u.rem(24);
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: u.rem(32);
+
+        &--title {
+            color: var(--primary-font-color);
+
+            @include u.text-preset-3;
+        }
+
+        &--description {
+            color: var(--secondary-font-color);
+
+            @include u.text-preset-6;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(16);
     }
 }

@@ -1,0 +1,58 @@
+@use "../utils/" as u;
+
+.advice__card {
+    display: flex;
+    flex-direction: column;
+
+    &--img {
+        width: u.rem(64);
+        height: u.rem(64);
+        margin-block-end: u.rem(32);
+    }
+
+    &--title {
+        color: var(--primary-font-color);
+        margin-block-end: u.rem(24);
+
+        @include u.text-preset-4;
+    }
+
+    &--info {
+        color: var(--secondary-font-color);
+
+        @include u.text-preset-6;
+    }
+}
+
+.limitation__card {
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(24);
+    padding: u.rem(24);
+    border: none;
+    border-radius: u.rem(16);
+    box-shadow: var(--secondary-box-shadow);
+
+    &--header {
+        display: flex;
+        align-items: center;
+        gap: u.rem(16);
+
+        &-img {
+            width: u.rem(32);
+            height: u.rem(32);
+        }
+
+        &-title {
+            color: var(--primary-font-color);
+
+            @include u.text-preset-5;
+        }
+    }
+
+    &--info {
+        color: var(--secondary-font-color);
+
+        @include u.text-preset-6;
+    }
+}

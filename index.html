@@ -162,10 +162,9 @@
                     </div>
                 </form>
             </section>
-            <section class="bmi__results">
+            <section class="results">
                 <img
                     class="results__decor"
-                    style="display: none"
                     src="./assets/images/pattern-curved-line-left.svg"
                     alt=""
                 />
@@ -174,7 +173,6 @@
                         class="results__meaning--img"
                         src="./assets/images/image-man-eating.webp"
                         alt="man eating with chopsticks"
-                        width="200px"
                     />
                     <h2 class="results__meaning--heading">
                         What your BMI result means
@@ -191,46 +189,40 @@
                     </p>
                 </div>
                 <div class="results__advice">
-                    <article class="results__advice--card">
+                    <article class="advice__card">
                         <img
-                            class="results__advice--card-img"
+                            class="advice__card--img"
                             src="./assets/images/icon-eating.svg"
                             alt="food icon"
                         />
-                        <h3 class="results__advice--card-title">
-                            Healthy eating
-                        </h3>
-                        <p class="results__advice--card-info">
+                        <h3 class="advice__card--title">Healthy eating</h3>
+                        <p class="advice__card--info">
                             Healthy eating promotes weight control, disease
                             prevention, better digestion, immunity, mental
                             clarity, and mood.
                         </p>
                     </article>
-                    <article class="results__advice--card">
+                    <article class="advice__card">
                         <img
-                            class="results__advice--card-img"
+                            class="advice__card--img"
                             src="./assets/images/icon-exercise.svg"
                             alt="exercise icon"
                         />
-                        <h3 class="results__advice--card-title">
-                            Regular exercise
-                        </h3>
-                        <p class="results__advice--card-info">
+                        <h3 class="advice__card--title">Regular exercise</h3>
+                        <p class="advice__card--info">
                             Exercise improves fitness, aids weight control,
                             elevates mood, and reduces disease risk, fostering
                             wellness and longevity.
                         </p>
                     </article>
-                    <article class="results__advice--card">
+                    <article class="advice__card">
                         <img
-                            class="results__advice--card-img"
+                            class="advice__card--img"
                             src="./assets/images/icon-sleep.svg"
                             alt="sleep icon"
                         />
-                        <h3 class="results__advice--card-title">
-                            Adequate sleep
-                        </h3>
-                        <p class="results__advice--card-info">
+                        <h3 class="advice__card--title">Adequate sleep</h3>
+                        <p class="advice__card--info">
                             Sleep enhances mental clarity, emotional stability,
                             and physical wellness, promoting overall restoration
                             and rejuvenation.
@@ -238,78 +230,99 @@
                     </article>
                 </div>
             </section>
-            <section class="bmi__limitations">
-                <h2 class="limitations__header">Limitations of BMI</h2>
-                <p class="limitations__description">
-                    Although BMI is often a practical indicator of healthy
-                    weight, it is not suited for every person. Specific groups
-                    should carefully consider their BMI outcomes, and in certain
-                    cases, the measurement may not be beneficial to use.
-                </p>
+            <section class="limitations">
+                <div class="limitations__header">
+                    <h2 class="limitations__header--title">
+                        Limitations of BMI
+                    </h2>
+                    <p class="limitations__header--description">
+                        Although BMI is often a practical indicator of healthy
+                        weight, it is not suited for every person. Specific
+                        groups should carefully consider their BMI outcomes, and
+                        in certain cases, the measurement may not be beneficial
+                        to use.
+                    </p>
+                </div>
                 <div class="limitations__details">
-                    <article class="limitations__details--card">
-                        <img
-                            class="limitations__details--card-img"
-                            src="./assets/images/icon-gender.svg"
-                            alt="gender icon"
-                        />
-                        <h3 class="limitations__details--card-title">Gender</h3>
-                        <p class="limitations__details--card-info">
+                    <article class="limitation__card">
+                        <div class="limitation__card--header">
+                            <img
+                                class="limitation__card--header-img"
+                                src="./assets/images/icon-gender.svg"
+                                alt="gender icon"
+                            />
+                            <h3 class="limitation__card--header-title">
+                                Gender
+                            </h3>
+                        </div>
+                        <p class="limitation__card--info">
                             The development and body fat composition of girls
                             and boys vary with age. Consequently, a child's age
                             and gender are considered when evaluating their BMI.
                         </p>
                     </article>
-                    <article class="limitations__details--card">
-                        <img
-                            class="limitations__details--card-img"
-                            src="./assets/images/icon-age.svg"
-                            alt="age icon"
-                        />
-                        <h3 class="limitations__details--card-title">Age</h3>
-                        <p class="limitations__details--card-info">
+                    <article class="limitation__card">
+                        <div class="limitation__card--header">
+                            <img
+                                class="limitation__card--header--img"
+                                src="./assets/images/icon-age.svg"
+                                alt="age icon"
+                            />
+                            <h3 class="limitation__card--header--title">Age</h3>
+                        </div>
+                        <p class="limitation__card--info">
                             In aging individuals, increased body fat and muscle
                             loss may cause BMI to underestimate body fat
                             content.
                         </p>
                     </article>
-                    <article class="limitations__details--card">
-                        <img
-                            class="limitations__details--card-img"
-                            src="./assets/images/icon-muscle.svg"
-                            alt="muscle icon"
-                        />
-                        <h3 class="limitations__details--card-title">Muscle</h3>
-                        <p class="limitations__details--card-info">
+                    <article class="limitation__card">
+                        <div class="limitation__card--header">
+                            <img
+                                class="limitation__card--header--img"
+                                src="./assets/images/icon-muscle.svg"
+                                alt="muscle icon"
+                            />
+                            <h3 class="limitation__card--header--title">
+                                Muscle
+                            </h3>
+                        </div>
+                        <p class="limitation__card--info">
                             BMI may misclassify muscular individuals as
                             overweight or obese, as it doesn't differentiate
                             muscle from fat.
                         </p>
                     </article>
-                    <article class="limitations__details--card">
-                        <img
-                            class="limitations__details--card-img"
-                            src="./assets/images/icon-pregnancy.svg"
-                            alt="pregnancy icon"
-                        />
-                        <h3 class="limitations__details--card-title">
-                            Pregnancy
-                        </h3>
-                        <p class="limitations__details--card-info">
+                    <article class="limitation__card">
+                        <div class="limitation__card--header">
+                            <img
+                                class="limitation__card--header--img"
+                                src="./assets/images/icon-pregnancy.svg"
+                                alt="pregnancy icon"
+                            />
+                            <h3 class="limitation__card--header--title">
+                                Pregnancy
+                            </h3>
+                        </div>
+                        <p class="limitation__card--info">
                             Expectant mothers experience weight gain due to
                             their growing baby. Maintaining a healthy
                             pre-pregnancy BMI is advisable to minimise health
                             risks for both mother and child.
                         </p>
                     </article>
-                    <article class="limitations__details--card">
-                        <img
-                            class="limitations__details--card-img"
-                            src="./assets/images/icon-race.svg"
-                            alt="racial icon"
-                        />
-                        <h3 class="limitations__details--card-title">Race</h3>
-                        <p class="limitations__details--card-info">
+                    <article class="limitation__card">
+                        <div class="limitation__card--header">
+                            <img
+                                class="limitation__card--header--img"
+                                src="./assets/images/icon-race.svg"
+                                alt="racial icon"
+                            />
+                            <h3 class="limitation__card--header--title">
+                                Race
+                            </h3>
+                        </div>
+                        <p class="limitation__card--info">
                             Certain health concerns may affect individuals of
                             some Black and Asian origins at lower BMIs than
                             others. To learn more, it is advised to discuss this
