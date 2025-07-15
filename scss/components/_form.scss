@@ -104,6 +104,10 @@ fieldset {
         display: flex;
         flex-direction: column;
         gap: u.rem(16);
+
+        @include u.breakpoint(small) {
+            flex-direction: row;
+        }
     }
 
     &__imperial {
@@ -127,6 +131,13 @@ fieldset {
         display: flex;
         flex-direction: column;
         gap: u.rem(24);
+
+        @include u.breakpoint(small) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: u.rem(16) u.rem(100) u.rem(100) u.rem(16);
+        }
 
         &--details {
             display: flex;

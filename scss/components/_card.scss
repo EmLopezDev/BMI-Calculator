@@ -22,6 +22,16 @@
 
         @include u.text-preset-6;
     }
+
+    @include u.breakpoint(small) {
+        flex-direction: row;
+        align-items: center;
+        gap: u.rem(40);
+
+        &--img {
+            margin: 0;
+        }
+    }
 }
 
 .limitation__card {
@@ -54,5 +64,9 @@
         color: var(--secondary-font-color);
 
         @include u.text-preset-6;
+    }
+
+    @include u.breakpoint(small) {
+        width: u.rem(335);
     }
 }
