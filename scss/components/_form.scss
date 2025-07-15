@@ -60,6 +60,7 @@ fieldset {
     padding: u.rem(24);
     border-radius: u.rem(16);
     box-shadow: var(--primary-box-shadow);
+    width: 100%;
 
     &__heading {
         color: var(--primary-font-color);
@@ -159,5 +160,10 @@ fieldset {
                 @include u.text-preset-7-bold;
             }
         }
+    }
+
+    @include u.breakpoint(medium) {
+        min-width: u.rem(564);
+        margin-block-start: u.rem(108);
     }
 }
