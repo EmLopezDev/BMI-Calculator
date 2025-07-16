@@ -115,7 +115,6 @@ fieldset {
         display: flex;
         flex-direction: column;
         gap: u.rem(16);
-        display: none;
 
         &--input {
             display: flex;
@@ -166,4 +165,8 @@ fieldset {
         min-width: u.rem(564);
         margin-block-start: u.rem(108);
     }
+}
+
+.hidden {
+    display: none;
 }

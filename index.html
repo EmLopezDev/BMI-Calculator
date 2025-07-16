@@ -33,6 +33,10 @@
             sizes="32x32"
             href="./assets/images/favicon-32x32.png"
         />
+        <script
+            src="./js/main.js"
+            defer
+        ></script>
         <title>Frontend Mentor | Body Mass Index Calculator</title>
     </head>
     <body>
@@ -66,6 +70,7 @@
                                 type="radio"
                                 name="measurement-type"
                                 class="form__type--radio"
+                                value="metric"
                                 checked
                             />
                             Metric
@@ -76,6 +81,7 @@
                                 type="radio"
                                 name="measurement-type"
                                 class="form__type--radio"
+                                value="imperial"
                             />
                             Imperial
                         </label>
@@ -107,7 +113,7 @@
                     </div>
                     <div
                         id="imperial-form"
-                        class="form__imperial"
+                        class="form__imperial hidden"
                     >
                         <fieldset class="form__imperial--input">
                             <label class="number-label">
