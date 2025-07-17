@@ -120,14 +120,17 @@
                                 Height
                                 <div class="form-input">
                                     <input
-                                        id="imperial-height"
+                                        id="imperial-height-ft"
                                         type="number"
                                     />
                                     <span>ft</span>
                                 </div>
                             </label>
                             <div class="form-input">
-                                <input type="number" />
+                                <input
+                                    id="imperial-height-in"
+                                    type="number"
+                                />
                                 <span>in</span>
                             </div>
                         </fieldset>
@@ -136,7 +139,7 @@
                                 Weight
                                 <div class="form-input">
                                     <input
-                                        id="imperial-weight"
+                                        id="imperial-weight-st"
                                         type="number"
                                     />
                                     <span>st</span>
@@ -144,27 +147,44 @@
                             </label>
                             <div class="form-input">
                                 <input
-                                    id="imperial-weight"
+                                    id="imperial-weight-lbs"
                                     type="number"
                                 />
                                 <span>lbs</span>
                             </div>
                         </fieldset>
                     </div>
-                    <div class="form__results">
-                        <p class="form__results--details">
+                    <div
+                        id="form-results"
+                        class="form__results"
+                    >
+                        <div class="form__results--empty">
+                            <h3 class="form__results--welcome">Welcome!</h3>
+                            <p class="form__results--instructions">
+                                Enter your height and weight and you'll see your
+                                BMI result here
+                            </p>
+                        </div>
+                        <!-- <p class="form__results--details">
                             Your BMI is...
-                            <span class="form__results--details-number">
+                            <span
+                                id="bmi-result"
+                                class="form__results--details-number"
+                            >
                                 23.4
                             </span>
                         </p>
                         <p class="form__results--info">
-                            Your BMI suggests you’re a healthy weight. Your
-                            ideal weight is between
-                            <span class="form__results--info-ideal">
+                            Your BMI suggests you’re
+                            <span id="weight-status">a healthy weight</span>
+                            . Your ideal weight is between
+                            <span
+                                id="weight-ideal"
+                                class="form__results--info-ideal"
+                            >
                                 63.3kgs - 85.2kgs.
                             </span>
-                        </p>
+                        </p> -->
                     </div>
                 </form>
             </section>

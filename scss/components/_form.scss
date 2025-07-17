@@ -139,6 +139,20 @@ fieldset {
             border-radius: u.rem(16) u.rem(100) u.rem(100) u.rem(16);
         }
 
+        &--empty {
+            display: flex;
+            flex-direction: column;
+            gap: u.rem(24);
+        }
+
+        &--welcome {
+            @include u.text-preset-4;
+        }
+
+        &--instructions {
+            @include u.text-preset-7;
+        }
+
         &--details {
             display: flex;
             flex-direction: column;
